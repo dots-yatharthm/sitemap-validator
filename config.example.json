@@ -1,0 +1,36 @@
+{
+  "sites": [
+    "https://www.example.com"
+  ],
+  "sitemap": {
+    "maxIndexDepth": 1,
+    "maxChildSitemaps": 50,
+    "maxFileBytes": 52428800
+  },
+  "status": {
+    "mode": "sample",
+    "sampleSize": 100,
+    "concurrency": 10,
+    "timeoutMs": 15000
+  },
+  "execution": {
+    "siteConcurrency": 3,
+    "sitemapConcurrency": 10,
+    "requestTimeoutMs": 30000,
+    "userAgent": "Playwright-Sitemap-Validator/3.0"
+  },
+  "checks": {
+    "wellFormedness": true,
+    "urlCount": true,
+    "urlFormat": true,
+    "exactDuplicates": true,
+    "suffixNearDuplicates": true,
+    "hostConsistency": true,
+    "status": true,
+    "trailingSlashConsistency": true,
+    "lastmodValidity": true
+  },
+  "output": {
+    "directory": "reports"
+  }
+}

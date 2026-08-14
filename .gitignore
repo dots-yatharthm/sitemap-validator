@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Generated reports / client deliverables
+reports/
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
